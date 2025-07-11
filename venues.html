@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Venues in Calicut</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body{
+         background: linear-gradient(to right, #151515, #1a6c6b);
+         color: white;
+    }
+    .venue-card {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+       background: linear-gradient(to right, #8b8b8b, #1a6c6b);
+    }
+    .venue-card:hover {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+    .venue-image {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .tag {
+      display: inline-block;
+      background-color: #f0f0f0;
+      color: #555;
+      padding: 2px 8px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      margin-right: 4px;
+    }
+        .footer-section {
+  background: linear-gradient(to right, #151515, #1a6c6b);
+}
+
+.footer-section a:hover {
+  color: #ffc107 !important;
+  text-decoration: underline;
+}
+
+.footer-section .form-control {
+  border-radius: 0;
+  box-shadow: none;
+}
+.footer-section a {
+  text-decoration: none;
+}
+  </style>
+</head>
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: transparent;">
+        <div class="container-fluid">
+            <!-- LOGO -->
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+
+                Calicut Events
+            </a>
+
+            <!-- Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-white">
+                    <li class="nav-item"><a class="nav-link text-white" href="package.html">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="vendors.html">Vendors</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="venues.html">Venues</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="booking.html">Book Now</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="vendorsregistration.html">Become a
+                            Vendor</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="login-page.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="container py-4 text-white">
+
+  <h2 class="mb-4 text-center">🏢 Available Venues in Calicut</h2>
+
+  <!-- Filters -->
+  <div class="row g-3 mb-4">
+    <div class="col-md-3">
+      <select class="form-select">
+        <option selected>Location</option>
+        <option>Kozhikode City</option>
+        <option>Feroke</option>
+        <option>Nadakkavu</option>
+      </select>
+    </div>
+    <div class="col-md-3">
+      <select class="form-select">
+        <option selected>Size</option>
+        <option>Small (0-200)</option>
+        <option>Medium (200-500)</option>
+        <option>Large (500+)</option>
+      </select>
+    </div>
+    <div class="col-md-3">
+      <select class="form-select">
+        <option selected>Indoor/Outdoor</option>
+        <option>Indoor</option>
+        <option>Outdoor</option>
+        <option>Both</option>
+      </select>
+    </div>
+    <div class="col-md-3">
+      <select class="form-select">
+        <option selected>Price Range</option>
+        <option>Under ₹20,000</option>
+        <option>₹20,000–₹50,000</option>
+        <option>₹50,000+</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Venue Grid -->
+  <div class="row g-4 text-dark">
+    <div class="col-md-4">
+      <div class="venue-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSesWJOQdkzCEEhgiCHsy3yaHZ6evFBC_Is9A&s" class="venue-image" alt="Venue Image">
+        <div class="p-3">
+          <h5 class="mb-1">Lotus Grand Hall</h5>
+          <p class="mb-1 ">Capacity: 600 Guests</p>
+          <p>₹45,000 / Day</p>
+          <div class="mb-2">
+            <span class="tag">Indoor</span>
+            <span class="tag">AC</span>
+            <span class="tag">Parking</span>
+          </div>
+          <a href="" class="btn btn-outline-dark btn-sm">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 text-dark">
+      <div class="venue-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdSR2Tw2nsMQSi55qOls_XM9WMsg2rFE2IKy6lmFIcPqrg3LKJeNT4mR2n0APoGt_t140&usqp=CAU" class="venue-image" alt="Venue Image">
+        <div class="p-3">
+          <h5 class="mb-1">Skyline Open Grounds</h5>
+          <p class="mb-1 ">Capacity: 1000 Guests</p>
+          <p>₹60,000 / Day</p>
+          <div class="mb-2">
+            <span class="tag">Outdoor</span>
+            <span class="tag">Garden</span>
+            <span class="tag">Stage</span>
+          </div>
+          <a href="" class="btn btn-outline-dark btn-sm">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 text-dark">
+      <div class="venue-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3ybbPpPunl9_T73F9LS86tQN0jIhX9rGszQ&s" class="venue-image" alt="Venue Image">
+        <div class="p-3">
+          <h5 class="mb-1">Elite Convention Centre</h5>
+          <p class="mb-1 ">Capacity: 800 Guests</p>
+          <p>₹75,000 / Day</p>
+          <div class="mb-2">
+            <span class="tag ">Indoor</span>
+            <span class="tag ">Luxury</span>
+            <span class="tag">AC</span>
+          </div>
+          <a href="" class="btn btn-outline-dark btn-sm">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Static Map View -->
+  <div class="mt-5">
+    <h4>📍 Venue Locations in Calicut</h4>
+    <img src="https://maps.googleapis.com/maps/api/staticmap?center=Calicut&zoom=12&size=800x300&key=YOUR_API_KEY" class="img-fluid rounded mt-2" alt="Map Image" />
+    <p class=" mt-2">*Replace with an embedded Google Map or interactive view for better UX.</p>
+  </div>
+
+</div>
+
+ <footer class="footer-section text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+
+                <!-- Quick Links -->
+                <div class="col-md-3 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-white-50">About</a></li>
+                        <li><a href="#services" class="text-white-50">Services</a></li>
+                        <li><a href="#contact" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-5 mb-4">
+                    <h5>Newsletter</h5>
+                    <p class="text-white-50">Subscribe for updates and special offers</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your Email">
+                        <button class="btn btn-info">Subscribe</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Social -->
+                <div class="col-md-4 mb-4">
+                    <h5>Contact & Support</h5>
+                    <p class="text-white-50 mb-1">📞 +91-98765-43210</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="bg-white" />
+            <p class="text-center text-white-50 mb-0">© 2025 Calicut Events. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

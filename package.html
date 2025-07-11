@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Packages</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body{
+        background: linear-gradient(to right, #151515, #1a6c6b);
+
+    }
+    .package-card {
+      border: 1px solid #ddd;
+      border-radius: 16px;
+      background: linear-gradient(to right, #d8d8d8, #1a6c6b);
+      transition: transform 0.3s ease;
+    }
+    .package-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+    .tier-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #fff;
+    }
+    .footer-section {
+  background: linear-gradient(to right, #151515, #1a6c6b);
+}
+
+.footer-section a:hover {
+  color: #ffc107 !important;
+  text-decoration: underline;
+}
+
+.footer-section .form-control {
+  border-radius: 0;
+  box-shadow: none;
+}
+.footer-section a {
+  text-decoration: none;
+}
+    .budget { background-color: #27ae60; }
+    .premium { background-color: #2980b9; }
+    .luxury { background-color: #8e44ad; }
+  </style>
+</head>
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: transparent;">
+        <div class="container-fluid">
+            <!-- LOGO -->
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+
+                Calicut Events
+            </a>
+
+            <!-- Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-white">
+                    <li class="nav-item"><a class="nav-link text-white" href="package.html">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="vendors.html">Vendors</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="venues.html">Venues</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="booking.html">Book Now</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="vendorsregistration.html">Become a
+                            Vendor</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="login-page.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="container py-5">
+  <h2 class="text-center text-white mb-4">🎁 Event Packages</h2>
+
+  <div class="row g-4">
+
+    <!-- Budget Package -->
+    <div class="col-md-4">
+      <div class="package-card position-relative p-4">
+        <span class="tier-badge budget">Budget</span>
+        <h5>Classic Celebration Combo</h5>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>🏢 Small Wedding Hall</li>
+          <li>🍛 Veg Catering (100 pax)</li>
+          <li>🎀 Basic Stage Decor</li>
+        </ul>
+        <h6 class="fw-bold">₹40,000</h6>
+        <a href="booking.html" class="btn btn-outline-success btn-sm mt-2">Customize</a>
+      </div>
+    </div>
+
+    <!-- Premium Package -->
+    <div class="col-md-4">
+      <div class="package-card position-relative p-4">
+        <span class="tier-badge premium">Premium</span>
+        <h5>Royal Wedding Experience</h5>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>🏢 AC Grand Hall</li>
+          <li>🍗 Multi-cuisine Catering (200 pax)</li>
+          <li>🌸 Premium Floral Decor</li>
+          <li>📸 Photography + Video</li>
+        </ul>
+        <h6 class="fw-bold">₹85,000</h6>
+        <a href="booking.html" class="btn btn-outline-primary btn-sm mt-2">Customize</a>
+      </div>
+    </div>
+
+    <!-- Luxury Package -->
+    <div class="col-md-4">
+      <div class="package-card position-relative p-4">
+        <span class="tier-badge luxury">Luxury</span>
+        <h5>Ultimate Royal Wedding</h5>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>🏰 Luxury Venue with AC</li>
+          <li>🍽️ Premium Catering (300 pax)</li>
+          <li>🌟 Designer Decor & Lights</li>
+          <li>🎬 Drone + Cinematic Photography</li>
+        </ul>
+        <h6 class="fw-bold">₹1,45,000</h6>
+        <a href="booking.html" class="btn btn-outline-dark btn-sm mt-2">Customize</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+ <footer class="footer-section text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+
+                <!-- Quick Links -->
+                <div class="col-md-3 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-white-50">About</a></li>
+                        <li><a href="#services" class="text-white-50">Services</a></li>
+                        <li><a href="#contact" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-5 mb-4">
+                    <h5>Newsletter</h5>
+                    <p class="text-white-50">Subscribe for updates and special offers</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your Email">
+                        <button class="btn btn-info">Subscribe</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Social -->
+                <div class="col-md-4 mb-4">
+                    <h5>Contact & Support</h5>
+                    <p class="text-white-50 mb-1">📞 +91-98765-43210</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="bg-white" />
+            <p class="text-center text-white-50 mb-0">© 2025 Calicut Events. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

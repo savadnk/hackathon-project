@@ -1,0 +1,154 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eaeaea;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+.hero {
+  background: url('https://www.bmpwedding.co.in/storage/app/public/uploads/blog/332375150_960728374925403_7332850971375466549_n.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.hero .overlay {
+  /* background: rgba(0, 0, 0, 0.5); */
+  position: absolute;
+  inset: 0;
+}
+
+.hero .content {
+  z-index: 2;
+  color: white;
+}
+
+.search-bar {
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin-top: -70px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  position: relative;
+}
+
+section {
+  background-color: #fbfbfb;
+  /* light gray background */
+
+}
+
+.category-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #e6e4e4;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.category-icon {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.vendor-section {
+  /* background: linear-gradient(to right, #000000, #898989); */
+  background-color: #d8d8d8;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.vendor-card {
+  background: linear-gradient(to right, #000000, #898989);
+  border-radius: 16px;
+  border: 1px rgb(159, 159, 159) solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.vendor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.vendor-card img {
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.08);
+  /* Glass effect */
+  border: 1px solid rgba(20, 2, 2, 0.2);
+  border-radius: 16px;
+  color: #000000;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  background-color: rgb(221, 221, 221);
+}
+
+.testimonial-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+.cta-section {
+  background: linear-gradient(to right, #151515, #1a6c6b);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.footer-section {
+  background: linear-gradient(to right, #151515, #1a6c6b);
+}
+
+.footer-section a:hover {
+  color: #ffc107 !important;
+  text-decoration: underline;
+}
+
+.footer-section .form-control {
+  border-radius: 0;
+  box-shadow: none;
+}
+.footer-section a {
+  text-decoration: none;
+}
+
+.highlight-section h2 {
+  color: #212529;
+}
+
+.highlight-section ul li {
+  font-size: 1.05rem;
+  color: #444;
+}
+
+
+.vendor-list-section {
+  background: linear-gradient(to right, #151515, #1a6c6b);
+}
+
+.vendor-listing img {
+  height: 17rem;
+}
